@@ -45,7 +45,6 @@ public class Movie
     [NotMapped]
     [Display(Name = "Duração")]
     public string HourDuration { get {
-        return TimeSpan.FromMinutes(Duration)
-            .ToString(@"%h'h 'mm'min'");
+        return TimeSpan.FromMinutes(Duration).ToString(@"%h'h 'mm'min'");
     }}
 }
