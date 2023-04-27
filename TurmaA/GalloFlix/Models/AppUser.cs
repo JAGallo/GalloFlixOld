@@ -14,5 +14,8 @@ public class AppUser : IdentityUser
     public DateTime DateOfBirth { get; set; }
 
     [StringLength(200)]
-    public string ProfilePicture { get; set; }    
+    public string ProfilePicture { get; set; }
+
+    public ICollection<MovieComment> Comments { get; set; }
+    public ICollection<MovieRating> Ratings { get; set; }
 }
